@@ -15,10 +15,13 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <img v-bind:src="image">
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <a :href="url">
+              <p>This is the Google URL</p>
+            </a>
           </div>
         </div>
       </div>
